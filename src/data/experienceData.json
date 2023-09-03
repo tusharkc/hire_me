@@ -2,32 +2,32 @@
   {
     "id": "01",
     "companyName": "ThinkJets",
-    "designation": "Digital Marketer",
+    "designation": "Digital Marketer | India",
     "skills": ["SEO", "Social Media Optimization", "Content Writing"]
   },
   {
     "id": "02",
     "companyName": "Breaking Through Careers",
-    "designation": "UX Designer",
+    "designation": "UX Designer | United Kingdom",
     "skills": ["UI/UX Design", "User Research", "Adobe XD", "Photo shop"]
   },
   {
     "id": "03",
     "companyName": "Docthub",
-    "designation": "Software Engineer",
+    "designation": "Software Engineer | India",
     "skills": ["React JS", "Next.js", "Typescript", "SCSS", "Bootstrap"]
   },
   {
     "id": "04",
     "companyName": "Softweb Solutions",
-    "designation": "Software Engineer",
+    "designation": "Software Engineer | India",
     "skills": ["React JS", "Next.js", "NodeJS", "SCSS", "Bootstrap"]
   },
 
   {
     "id": "05",
     "companyName": "Ninjatech.agency",
-    "designation": "Software Engineer",
+    "designation": "Software Engineer | India",
     "skills": ["React JS", "Next.js", "NodeJS", "SCSS", "Bootstrap", "Firebase"]
   }
 ]
