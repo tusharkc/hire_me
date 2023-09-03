@@ -5,6 +5,7 @@ import Testimonial from "./Testimonial";
 import Experience from "./Experience";
 import HomeAboutMe from "./HomeAboutMe";
 import SayHi from "./SayHi";
+import ContactForm from "./ContactForm";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Experience />
       <HomeAboutMe />
       <SayHi />
+      <ContactForm />
     </>
   );
 };
