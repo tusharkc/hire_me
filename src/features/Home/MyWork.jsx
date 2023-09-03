@@ -41,7 +41,7 @@ const MyWork = () => {
 
   return (
     <>
-      <div className="p-6 md:p-0">
+      <div className="p-6 md:p-0 container mx-auto">
         <SectionHeading>Checkout My Work</SectionHeading>
       </div>
       <div ref={imageContainer}>
