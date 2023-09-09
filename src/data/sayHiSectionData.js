@@ -16,7 +16,7 @@ export const sayHiSectionData = [
   500,
   "I am a quick learner.",
   500,
-  "Contact me bellow. 😄",
+  "Contact me below. 😄",
   500,
 ];
 
