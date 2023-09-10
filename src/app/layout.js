@@ -1,3 +1,4 @@
+import { LoaderLayout } from "@/components";
 import "./globals.css";
 import { Titillium_Web } from "next/font/google";
 
@@ -14,7 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={titilliumWeb.className}>{children}</body>
+      <body className={titilliumWeb.className}>
+        <LoaderLayout>{children}</LoaderLayout>
+      </body>
     </html>
   );
 }

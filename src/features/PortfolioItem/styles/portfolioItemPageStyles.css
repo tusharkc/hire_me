@@ -1,0 +1,23 @@
+.project_details h1 {
+  font-size: xx-large;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.project_details h2 {
+  font-size: x-large;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.project_details p {
+  font-size: larger;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  line-height: 1.6;
+}
+.project_details ul,
+li {
+  list-style: unset;
+  padding: 4px;
+}
