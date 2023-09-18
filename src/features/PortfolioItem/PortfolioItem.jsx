@@ -25,7 +25,7 @@ const PortfolioItem = () => {
       <div className="p-6 md:p-0 container mx-auto">
         <SectionHeading>Checkout My Other Work</SectionHeading>
         {portfolioData
-          ?.filter((x) => x?.id !== id)
+          ?.filter((x) => x?.id !== parseInt(id))
           ?.map((portfolioItem, index) => (
             <React.Fragment key={portfolioItem?.id}>
               <div className="grid grid-cols-12 py-8 md:gap-9">
