@@ -2,10 +2,10 @@ import React from "react";
 
 const PortfolioItemRight = ({ data }) => {
   return (
-    <div className="px-6 md:px-0">
+    <div className="px-6 md:px-0 container mx-auto max-w-2xl">
       <h1
         style={{ viewTransitionName: `projectTitle-${data?.id}` }}
-        className="text-white text-4xl font-black tracking-wide py-4 m-0"
+        className="text-white text-7xl font-black tracking-wide py-4 m-0"
       >
         {data?.projectName}
       </h1>

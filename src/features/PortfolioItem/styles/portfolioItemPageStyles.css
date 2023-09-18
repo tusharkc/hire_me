@@ -14,10 +14,11 @@
   font-size: larger;
   padding-top: 4px;
   padding-bottom: 4px;
-  line-height: 1.6;
+  line-height: 2;
 }
 .project_details ul,
 li {
   list-style: unset;
   padding: 4px;
+  line-height: 2;
 }
