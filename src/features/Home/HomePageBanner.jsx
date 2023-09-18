@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { homePageBannerTitleData } from "@/data/homePageBannerTitleData";
 import React from "react";
 import Typical from "react-typical";
@@ -5,6 +6,11 @@ import Typical from "react-typical";
 const HomePageBanner = () => {
   return (
     <div className="relative mx-auto h-screen">
+      <img
+        alt=""
+        src="assets/homePage/scrollDown.png"
+        className="absolute right-4 bottom-4 w-12 md:w-24"
+      />
       <video autoPlay muted loop className="-z-10 h-full w-full object-cover">
         <source src={"/assets/homePage/home_banner_bg.mp4"} type="video/mp4" />
       </video>
