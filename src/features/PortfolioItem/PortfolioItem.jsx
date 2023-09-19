@@ -66,6 +66,8 @@ const PortfolioItem = () => {
             </React.Fragment>
           ))}
       </div>
+      <SectionHeading>Contact me for your project</SectionHeading>
+
       <ContactForm />
     </>
   );
