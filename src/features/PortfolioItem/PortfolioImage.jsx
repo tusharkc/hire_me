@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const PortfolioItemLeft = ({ data }) => {
+const PortfolioImage = ({ data }) => {
   return (
     <Image
       width={0}
@@ -17,4 +17,4 @@ const PortfolioItemLeft = ({ data }) => {
   );
 };
 
-export default PortfolioItemLeft;
+export default PortfolioImage;

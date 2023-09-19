@@ -61,7 +61,51 @@ const Layout = ({ children }) => {
         <div className="bar w-[10vw] h-screen bg-[#1a1a1a]"></div>
         <div className="bar w-[10vw] h-screen bg-[#1a1a1a]"></div>
       </div>
-      {count === 100 && children}
+      {count === 100 && (
+        <>
+          <header className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg">
+            <div className="flex items-center justify-between md:justify-end container mx-auto">
+              <nav className="p-4 md:p-8">
+                <a
+                  href="/"
+                  className="cursor-pointer text-black font-bold text-xl md:text-2xl"
+                >
+                  Home
+                </a>
+              </nav>
+              <nav className="p-4 md:p-8">
+                <a
+                  target="_blank"
+                  href="https://github.com/tusharkc"
+                  className="cursor-pointer text-black font-bold text-xl md:text-2xl"
+                >
+                  Github
+                </a>
+              </nav>
+              <nav className="p-4 md:p-8">
+                <a
+                  target="_blank"
+                  href="https://twitter.com/tusharkc2502"
+                  className="cursor-pointer text-black font-bold text-xl md:text-2xl"
+                >
+                  Twitter
+                </a>
+              </nav>
+              <nav className="p-4 md:p-8">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/tushar-karamchandani-92592120b/"
+                  className="cursor-pointer text-black font-bold text-xl md:text-2xl"
+                >
+                  Linkedin
+                </a>
+              </nav>
+            </div>
+          </header>
+
+          {children}
+        </>
+      )}
     </>
   );
 };

@@ -6,7 +6,7 @@ import Testimonial from "./Testimonial";
 import Experience from "./Experience";
 import HomeAboutMe from "./HomeAboutMe";
 import SayHi from "./SayHi";
-import ContactForm from "../../components/ui/ContactForm";
+import { ContactForm } from "@/components";
 
 const Home = () => {
   return (

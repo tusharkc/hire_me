@@ -1,6 +1,6 @@
 import React from "react";
 
-const PortfolioItemRight = ({ data }) => {
+const PortfolioContent = ({ data }) => {
   return (
     <div className="px-6 md:px-0 container mx-auto max-w-2xl">
       <h1
@@ -18,4 +18,4 @@ const PortfolioItemRight = ({ data }) => {
   );
 };
 
-export default PortfolioItemRight;
+export default PortfolioContent;

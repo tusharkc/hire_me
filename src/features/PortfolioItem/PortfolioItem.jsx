@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
-import PortfolioItemLeft from "./PortfolioItemLeft";
-import PortfolioItemRight from "./PortfolioItemRight";
+import PortfolioImage from "./PortfolioImage";
+import PortfolioContent from "./PortfolioContent";
 import portfolioData from "../../data/portfolioData.json";
 import { useParams, useRouter } from "next/navigation";
 import "./styles/portfolioItemPageStyles.css";
 import Image from "next/image";
 import SectionHeading from "../Home/SectionHeading";
 import { flushSync } from "react-dom";
-import ContactForm from "@/components/ui/ContactForm";
+import { ContactForm } from "@/components";
 
 const PortfolioItem = () => {
   const { id } = useParams();
@@ -19,8 +19,8 @@ const PortfolioItem = () => {
 
   return (
     <>
-      <PortfolioItemLeft data={foundItem} />
-      <PortfolioItemRight data={foundItem} />
+      <PortfolioImage data={foundItem} />
+      <PortfolioContent data={foundItem} />
 
       <div className="p-6 md:p-0 container mx-auto">
         <SectionHeading>Checkout My Other Work</SectionHeading>
@@ -77,11 +77,11 @@ export default PortfolioItem;
   /* <div className="grid grid-cols-12 gap-8 w-[screen] h-[100vh]">
       <div className="col-span-12 md:col-span-8">
         <div className="md:sticky md:top-0">
-          <PortfolioItemLeft data={foundItem} />
+          <PortfolioImage data={foundItem} />
         </div>
       </div>
       <div className="col-span-12 md:col-span-4">
-        <PortfolioItemRight data={foundItem} />
+        <PortfolioContent data={foundItem} />
       </div>
     </div> */
 }
