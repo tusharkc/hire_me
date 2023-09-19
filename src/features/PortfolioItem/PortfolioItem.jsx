@@ -57,7 +57,7 @@ const PortfolioItem = () => {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-full object-contain col-span-12 md:col-span-8"
+                  className="w-full object-contain col-span-12 md:col-span-8 border border-white rounded-lg"
                   style={{
                     viewTransitionName: `portfolioImage-${portfolioItem.id}`,
                   }}
