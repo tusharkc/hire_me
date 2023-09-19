@@ -1,5 +1,6 @@
 "use client";
 import { gsap } from "gsap";
+import Link from "next/link";
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const Layout = ({ children }) => {
@@ -86,12 +87,12 @@ const Layout = ({ children }) => {
           >
             <div className="flex items-center justify-between md:justify-end container mx-auto">
               <nav className="p-4 md:p-8">
-                <a
+                <Link
                   href="/"
                   className="cursor-pointer text-black font-bold text-xl md:text-2xl"
                 >
                   Home
-                </a>
+                </Link>
               </nav>
               <nav className="p-4 md:p-8">
                 <a
