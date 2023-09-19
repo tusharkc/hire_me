@@ -4,6 +4,21 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const Layout = ({ children }) => {
   const [count, setCount] = useState(0);
+  const [isSticky, setSticky] = useState(false);
+  const ref = useRef(null);
+  const handleScroll = () => {
+    if (ref.current) {
+      setSticky(ref.current.getBoundingClientRect().top <= 0);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", () => handleScroll);
+    };
+  }, []);
 
   const counterRef = useRef(null);
   useEffect(() => {
@@ -63,7 +78,12 @@ const Layout = ({ children }) => {
       </div>
       {count === 100 && (
         <>
-          <header className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg">
+          <header
+            ref={ref}
+            className={`${
+              isSticky ? "sticky" : "absolute"
+            } top-0 left-0 right-0 z-50 bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg`}
+          >
             <div className="flex items-center justify-between md:justify-end container mx-auto">
               <nav className="p-4 md:p-8">
                 <a
