@@ -66,7 +66,9 @@ const PortfolioItem = () => {
             </React.Fragment>
           ))}
       </div>
-      <SectionHeading>Contact me for your project</SectionHeading>
+      <div className="p-6 md:p-0 container mx-auto">
+        <SectionHeading>Contact me for your project</SectionHeading>
+      </div>
 
       <ContactForm />
     </>
