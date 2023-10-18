@@ -5,7 +5,7 @@ export const POST = async (request, response) => {
   try {
     const requestData = await request.json();
     const appMailId = "tusharkaramchandani25@gmail.com";
-    const appPass = "sepnmggcevxfxqho";
+    const appPass = "hlun yent joge szuv";
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
