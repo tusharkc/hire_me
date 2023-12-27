@@ -13,20 +13,28 @@ const HomeAboutMe = () => {
       <div className="grid grid-cols-12 items-start min-h-screen">
         <div className="col-span-12 md:col-span-6 justify-end p-6 md:p-0">
           <p className="tracking-widest leading-7">
-            Hello, I&lsquo;m Tushar Karamchandani, a 21-year-old self-taught
-            software engineer with four years of hands-on experience. No degree,
-            no worries! I&lsquo;ve been navigating the coding world with
-            finesse.
+            Hello! I&lsquo;m a 21-year-old full-stack developer with expertise
+            in React Native and a recent interest in Machine Learning and AI. My
+            journey started with a passion for coding and problem-solving, and
+            I&lsquo;ve since developed a wide array of skills in both front-end
+            and back-end development.
           </p>
           <p className="tracking-widest leading-7 my-8">
-            Frontend, backend, and even blockchain - I&lsquo;ve explored a
-            multitude of technologies. React, Node.js, Solidity - they&lsquo;re
-            all in my repertoire. Mobile app development? React Native is my
-            playground.
+            I&lsquo;ve honed my ability to create intuitive applications using
+            React Native and recently expanded my skillset to include Machine
+            Learning and AI. My recent projects in this domain involve
+            developing algorithms for predictive modeling, natural language
+            processing, and computer vision.
           </p>
           <p className="tracking-widest leading-7">
-            I&lsquo;m all about tech and making things work. Let&lsquo;s delve
-            into the digital realm and create something amazing together!
+            I&lsquo;m always eager to learn and improve, and I&lsquo;m excited
+            to bring my skills to real-world challenges. I&lsquo;m particularly
+            interested in roles that allow me to apply my skills to create
+            innovative solutions.
+          </p>
+          <p className="tracking-widest leading-7">
+            Ready to connect? Let&lsquo;s chat about how I can contribute to
+            your team. Feel free to reach out to me via email or LinkedIn.
           </p>
         </div>
         <div className="col-span-12 md:col-span-6 order-1">
