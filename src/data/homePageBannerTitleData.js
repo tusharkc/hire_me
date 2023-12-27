@@ -5,7 +5,7 @@ export const homePageBannerTitleData = [
   200,
   "Blockchain/Web3 Engineer",
   200,
-  "AI enthusiast",
+  "Machine learning engineer",
   200,
   "Occasional rapper",
   100,
