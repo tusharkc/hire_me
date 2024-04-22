@@ -121,6 +121,15 @@ const Layout = ({ children }) => {
                   Linkedin
                 </a>
               </nav>
+              <nav className="p-4 md:p-8">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/@Tusharkc"
+                  className="cursor-pointer text-black font-bold text-xl md:text-2xl"
+                >
+                  Youtube
+                </a>
+              </nav>
             </div>
           </header>
 
