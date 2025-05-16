@@ -1,7 +1,7 @@
 import { LoaderLayout } from "@/components";
-import "./globals.css";
 import { Titillium_Web } from "next/font/google";
 import Script from "next/script";
+import "./globals.css";
 
 const titilliumWeb = Titillium_Web({
   subsets: ["latin"],

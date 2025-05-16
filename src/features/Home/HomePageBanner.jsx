@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { homePageBannerTitleData } from "@/data/homePageBannerTitleData";
-import React from "react";
 import Typical from "react-typical";
 
 const HomePageBanner = () => {

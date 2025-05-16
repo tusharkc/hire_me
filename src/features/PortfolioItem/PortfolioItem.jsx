@@ -1,14 +1,14 @@
 "use client";
-import React from "react";
-import PortfolioImage from "./PortfolioImage";
-import PortfolioContent from "./PortfolioContent";
-import portfolioData from "../../data/portfolioData.json";
-import { useParams, useRouter } from "next/navigation";
-import "./styles/portfolioItemPageStyles.css";
-import Image from "next/image";
-import SectionHeading from "../Home/SectionHeading";
-import { flushSync } from "react-dom";
 import { ContactForm } from "@/components";
+import Image from "next/image";
+import { useParams, useRouter } from "next/navigation";
+import React from "react";
+import { flushSync } from "react-dom";
+import portfolioData from "../../data/portfolioData.json";
+import SectionHeading from "../Home/SectionHeading";
+import PortfolioContent from "./PortfolioContent";
+import PortfolioImage from "./PortfolioImage";
+import "./styles/portfolioItemPageStyles.css";
 
 const PortfolioItem = () => {
   const { id } = useParams();
@@ -40,6 +40,7 @@ const PortfolioItem = () => {
                       className="bg-[#e8e8e8] p-2 md:p-4 rounded-lg text-black drop-shadow-2xl border border-black text-lg"
                       onClick={(ev) => {
                         ev.preventDefault();
+
                         document.startViewTransition(() => {
                           flushSync(() => {
                             router.push(`/portfolio/${portfolioItem?.id}`);
@@ -76,16 +77,3 @@ const PortfolioItem = () => {
 };
 
 export default PortfolioItem;
-
-{
-  /* <div className="grid grid-cols-12 gap-8 w-[screen] h-[100vh]">
-      <div className="col-span-12 md:col-span-8">
-        <div className="md:sticky md:top-0">
-          <PortfolioImage data={foundItem} />
-        </div>
-      </div>
-      <div className="col-span-12 md:col-span-4">
-        <PortfolioContent data={foundItem} />
-      </div>
-    </div> */
-}

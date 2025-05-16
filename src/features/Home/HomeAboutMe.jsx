@@ -1,7 +1,6 @@
-import React from "react";
-import SectionHeading from "./SectionHeading";
 import Image from "next/image";
 import tusharKcImage from "public/assets/homePage/tushar_kc_img.png";
+import SectionHeading from "./SectionHeading";
 
 const HomeAboutMe = () => {
   return (

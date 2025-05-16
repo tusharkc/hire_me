@@ -1,12 +1,11 @@
 "use client";
-import React from "react";
-import HomePageBanner from "./HomePageBanner";
-import MyWork from "./MyWork";
-import Testimonial from "./Testimonial";
+import { ContactForm } from "@/components";
 import Experience from "./Experience";
 import HomeAboutMe from "./HomeAboutMe";
+import HomePageBanner from "./HomePageBanner";
+import MyWork from "./MyWork";
 import SayHi from "./SayHi";
-import { ContactForm } from "@/components";
+import Testimonial from "./Testimonial";
 
 const Home = () => {
   return (

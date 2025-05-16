@@ -1,5 +1,4 @@
 import { PortfolioItem } from "@/features";
-import React from "react";
 
 const PortfolioPage = () => {
   return (

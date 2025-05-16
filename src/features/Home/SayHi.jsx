@@ -1,5 +1,4 @@
 import { sayHiSectionData } from "@/data/sayHiSectionData";
-import React from "react";
 import Typical from "react-typical";
 
 const SayHi = () => {

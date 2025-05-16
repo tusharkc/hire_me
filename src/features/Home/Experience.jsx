@@ -1,4 +1,3 @@
-import React from "react";
 import experienceDataJson from "../../data/experienceData.json";
 import ExperienceListItem from "./ExperienceListItem";
 import SectionHeading from "./SectionHeading";

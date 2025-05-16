@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState, useEffect } from "react";
-import SectionHeading from "./SectionHeading";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRouter } from "next/navigation";
-import { flushSync } from "react-dom";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import React, { useEffect, useState } from "react";
+import { flushSync } from "react-dom";
 import portfolioData from "../../data/portfolioData.json";
+import SectionHeading from "./SectionHeading";
 gsap.registerPlugin(ScrollTrigger);
 
 const MyWork = () => {

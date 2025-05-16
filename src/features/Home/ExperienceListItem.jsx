@@ -1,4 +1,3 @@
-import React from "react";
 
 const ExperienceListItem = ({ experience }) => {
   const { companyName = "", designation = "", skills = [], id } = experience;

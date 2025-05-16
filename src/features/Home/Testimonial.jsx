@@ -1,7 +1,6 @@
 import { testimonialData } from "@/data/testimonialData";
-import React from "react";
-import TestimonialCard from "./TestimonialCard";
 import SectionHeading from "./SectionHeading";
+import TestimonialCard from "./TestimonialCard";
 
 const Testimonial = () => {
   return (

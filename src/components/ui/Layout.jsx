@@ -1,7 +1,7 @@
 "use client";
 import { gsap } from "gsap";
 import Link from "next/link";
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const Layout = ({ children }) => {
   const [count, setCount] = useState(0);
