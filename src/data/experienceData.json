@@ -28,6 +28,14 @@
     "id": "05",
     "companyName": "Ninjatech.agency",
     "designation": "Software Engineer | India",
-    "skills": ["React JS", "Next.js", "NodeJS", "SCSS", "Bootstrap", "Firebase"]
+    "skills": [
+      "React JS",
+      "Next.js",
+      "NodeJS",
+      "SCSS",
+      "Bootstrap",
+      "Firebase",
+      "Postgresql"
+    ]
   }
 ]
