@@ -3,7 +3,6 @@ import { ContactForm } from "@/components";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import React from "react";
-import { flushSync } from "react-dom";
 import portfolioData from "../../data/portfolioData.json";
 import SectionHeading from "../Home/SectionHeading";
 import PortfolioContent from "./PortfolioContent";
@@ -41,11 +40,7 @@ const PortfolioItem = () => {
                       onClick={(ev) => {
                         ev.preventDefault();
 
-                        document.startViewTransition(() => {
-                          flushSync(() => {
-                            router.push(`/portfolio/${portfolioItem?.id}`);
-                          });
-                        });
+                        router.push(`/portfolio/${portfolioItem?.id}`);
                       }}
                     >
                       View Detail
@@ -59,9 +54,6 @@ const PortfolioItem = () => {
                   height={0}
                   sizes="100vw"
                   className="w-full object-contain col-span-12 md:col-span-8 border border-white rounded-lg"
-                  style={{
-                    viewTransitionName: `portfolioImage-${portfolioItem.id}`,
-                  }}
                 />
               </div>
             </React.Fragment>
