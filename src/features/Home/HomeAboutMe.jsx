@@ -12,30 +12,34 @@ const HomeAboutMe = () => {
       <div className="grid grid-cols-12 items-start min-h-screen">
         <div className="col-span-12 md:col-span-6 justify-end p-6 md:p-0">
           <p className="tracking-widest leading-7">
-            Hello! I&lsquo;m a 21-year-old full-stack developer with expertise
-            in React Native and a recent interest in Machine Learning and AI. My
-            journey started with a passion for coding and problem-solving, and
-            I&lsquo;ve since developed a wide array of skills in both front-end
-            and back-end development.
+            Hello! I’m a full-stack engineer with a strong foundation in web and
+            mobile development, combined with hands-on experience in AI and
+            Machine Learning. With a deep understanding of both frontend and
+            backend systems, I specialize in building scalable, intuitive
+            applications that solve real-world problems.
           </p>
           <p className="tracking-widest leading-7 my-8">
-            I&lsquo;ve honed my ability to create intuitive applications using
-            React Native and recently expanded my skillset to include Machine
-            Learning and AI. My recent projects in this domain involve
-            developing algorithms for predictive modeling, natural language
-            processing, and computer vision.
+            Over the years, I’ve developed and deployed production-ready
+            applications using technologies like React Native, Next.js, Django,
+            and PostgreSQL. My recent focus has been on integrating AI into
+            practical solutions—working on predictive models, natural language
+            processing pipelines, and computer vision projects that deliver
+            measurable impact.
           </p>
           <p className="tracking-widest leading-7">
-            I&lsquo;m always eager to learn and improve, and I&lsquo;m excited
-            to bring my skills to real-world challenges. I&lsquo;m particularly
-            interested in roles that allow me to apply my skills to create
-            innovative solutions.
+            I thrive in fast-paced environments where experimentation,
+            ownership, and continuous learning are valued. I’m especially drawn
+            to early-stage startups where I can contribute not just as a
+            developer, but as a problem-solver and product-minded thinker.
           </p>
           <p className="tracking-widest leading-7">
-            Ready to connect? Let&lsquo;s chat about how I can contribute to
-            your team. Feel free to reach out to me via email or LinkedIn.
+            If you&apos;re building something ambitious and need a full-stack
+            engineer who can ship fast, learn quickly, and own outcomes—let’s
+            connect. I’m actively looking for remote opportunities where I can
+            bring value from day one.
           </p>
         </div>
+
         <div className="col-span-12 md:col-span-6 order-1">
           <Image
             className="max-w-[100vw] md:max-w-xl object-cover rounded-xl float-right p-6 md:p-0"
