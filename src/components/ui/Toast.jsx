@@ -1,4 +1,7 @@
 "use client";
+import CheckIcon from "@mui/icons-material/Check";
+import CloseIcon from "@mui/icons-material/Close";
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect } from "react";
 
 const Toast = ({ message, showToast, setShowToast, isError }) => {
@@ -14,20 +17,46 @@ const Toast = ({ message, showToast, setShowToast, isError }) => {
     }
   }, [showToast]);
 
-  const toastClassName = `fixed bottom-5 right-5 py-2 px-4 rounded-md shadow-md ${
-    showToast ? "block" : "hidden"
-  }`;
+  // Icon components for success and error states
+  const SuccessIcon = () => <CheckIcon />;
+
+  const ErrorIcon = () => <CloseIcon />;
 
   return (
-    <div
-      className={
-        isError
-          ? `${toastClassName} bg-red-500 text-white`
-          : `${toastClassName} bg-green-700 text-white`
-      }
-    >
-      <span>{message}</span>
-    </div>
+    <AnimatePresence>
+      {showToast && (
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.3 }}
+          className="fixed bottom-5 right-5 z-50"
+        >
+          <div
+            className={`flex items-center gap-3 py-3 px-4 rounded-lg shadow-lg border ${
+              isError
+                ? "bg-black text-white border-red-600"
+                : "bg-black text-white border-green-600"
+            }`}
+          >
+            <div
+              className={`flex items-center justify-center w-8 h-8 rounded-full ${
+                isError ? "bg-red-600" : "bg-green-600"
+              }`}
+            >
+              {isError ? <ErrorIcon /> : <SuccessIcon />}
+            </div>
+            <span className="text-sm font-medium">{message}</span>
+            <button
+              onClick={() => setShowToast(false)}
+              className="ml-2 text-white opacity-70 hover:opacity-100 focus:outline-none"
+            >
+              <CloseIcon />
+            </button>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 
