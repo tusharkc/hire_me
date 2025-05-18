@@ -1,5 +1,5 @@
 import Image from "next/image";
-import tusharKcImage from "public/assets/homePage/tushar_kc_img.png";
+import tusharKcImage from "public/assets/homePage/tushar_kc_img.jpeg";
 import SectionHeading from "./SectionHeading";
 
 const HomeAboutMe = () => {
