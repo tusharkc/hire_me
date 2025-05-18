@@ -1,11 +1,7 @@
-
 const PortfolioContent = ({ data }) => {
   return (
     <div className="px-6 md:px-0 container mx-auto max-w-2xl">
-      <h1
-        style={{ viewTransitionName: `projectTitle-${data?.id}` }}
-        className="text-white text-5xl md:text-7xl font-black tracking-wide py-4 m-0"
-      >
+      <h1 className="text-white text-5xl md:text-7xl font-black tracking-wide py-4 m-0">
         {data?.projectName}
       </h1>
 

@@ -7,9 +7,6 @@ const PortfolioImage = ({ data }) => {
       height={0}
       sizes="100vw"
       className="md:h-[70vh] w-full max-w-[100vw] object-contain bg-gradient-to-r from-slate-500 to-slate-800 md:p-6"
-      style={{
-        viewTransitionName: `portfolioImage-${0}`,
-      }}
       src={data?.projectImg}
       alt=""
     />
